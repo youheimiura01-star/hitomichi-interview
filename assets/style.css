@@ -81,6 +81,12 @@ body {
   color: var(--ink);
 }
 
+/* ---------- Header logo: swap black/white by header state ---------- */
+.header-logo .logo-light { display: none; }
+.header-logo .logo-dark  { display: block; }
+.site-header.is-light .header-logo .logo-light { display: block; }
+.site-header.is-light .header-logo .logo-dark  { display: none; }
+
 .nav-link {
   position: relative;
   font-size: 13px;
